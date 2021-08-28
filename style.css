@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: #d7dde5;
+  background: #ffffff;
   font-family: "Roboto", sans-serif;
 }
 
@@ -15,11 +15,11 @@ nav {
   justify-content: space-between;
   padding: 15px 5%;
   align-items: center;
-  background: #18283b;
+  background: #ffffff;
 }
 
 .logo {
-  color: #fff;
+  color: black;
   font-size: 22px;
 }
 
@@ -33,7 +33,7 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: #8291a5;
+  color: black;
   padding: 8px 30px;
   border-radius: 7px;
   transition: all 0.3s ease;
@@ -42,7 +42,7 @@ ul li a {
 ul li a:hover,
 ul li a.active {
   color: #fff;
-  background: #0075ff;
+  background: #ff6464;
 }
 
 #icon {
