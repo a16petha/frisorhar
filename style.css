@@ -6,16 +6,83 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: #ffffff;
+  background: #f7f8fc;
   font-family: "Roboto", sans-serif;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.main-content {
+  display: flex;
+}
+
+.about {
+  width: 66%;
+  margin-right: 10px;
+  max-height: 25vh;
+  margin-top: 15px;
+  background: #ffffff;
+  padding: 1em;
+  border-color: #ff6464;
+  border-style: solid;
+  border-width: 0px 0px 2px 2px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 3px 3px 10px grey;
+  margin-left: 1em;
+}
+
+.aside {
+  width: 34%;
+  max-height: 25vh;
+  margin-top: 15px;
+  background: #ffffff;
+  padding: 1em;
+  border-color: #ff6464;
+  border-style: solid;
+  border-width: 0px 2px 2px 0px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 3px 3px 10px grey;
+  margin-right: 1em;
+}
+
+.main-picture img {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.logo {
+  width: 125px;
+  height: 100px;
+  float: left;
+}
+
+.logo2 {
+  float: right;
+  margin-left: 1em;
+}
+
+.logo25 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 15px 5%;
+  padding: 5px 1%;
   align-items: center;
   background: #ffffff;
+  box-shadow: 3px 3px 10px grey;
+  margin-bottom: 15px;
 }
 
 .logo {
@@ -46,7 +113,7 @@ ul li a.active {
 }
 
 #icon {
-  background-color: #0075ff;
+  background-color: #ff6464;
   padding: 5px 7px 3px 7px;
   border-radius: 4px;
   cursor: pointer;
@@ -64,39 +131,14 @@ ul li a.active {
 }
 
 #icon:hover svg {
-  color: #0075ff;
+  color: #d12322;
 }
 
 #checkbox,
 #icon {
   display: none;
 }
-/* Youtube link */
-.link {
-  position: fixed;
-  background-color: #d12322;
-  padding: 23px 40px;
-  right: -100px;
-  border-radius: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  transform: rotate(-90deg);
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: all 0.1s ease-in-out;
-}
 
-.link i {
-  padding-left: 7px;
-}
-
-.link:hover {
-  text-decoration: underline;
-  background-color: black;
-}
 @media screen and (max-width: 768px) {
   nav {
     border-bottom: 1px solid #455468;
@@ -106,12 +148,12 @@ ul li a.active {
     position: absolute;
     width: 100%;
     height: calc(100vh - 71px);
-    background-color: #18283b;
+    background-color: #ffffff;
     left: 0;
     top: 0;
     text-align: center;
     display: none;
-    margin-top: 71px;
+    margin-top: 131px;
   }
 
   ul li {
@@ -130,5 +172,46 @@ ul li a.active {
 
   #checkbox:checked ~ ul {
     display: block;
+  }
+}
+
+.footer {
+  position: fixed;
+  max-width: 1440px;
+  margin-right: 0 auto;
+  bottom: 0;
+
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  color: black;
+  box-shadow: 2px 2px 10px grey;
+}
+
+.icons {
+  padding-top: 1rem;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0.5rem;
+  color: #f4f4f4;
+}
+
+.company-name {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .footer {
+    font-size: 50%;
   }
 }
